@@ -1,0 +1,72 @@
+[
+    {
+        "nome": "Cães de Aluguel",
+        "ano": 1992,
+        "sinopse": "Seis criminosos, que não se conhecem, são contratados para um grande roubo de diamantes. Mas o assalto dá errado e o grupo se reúne em um armazém para descobrir quem é o traidor.",
+        "poster": "https://upload.wikimedia.org/wikipedia/pt/e/e1/Reservoir_Dogs_1992.jpg",
+        "trailer_link": "https://www.youtube.com/watch?v=vayksn4Y93A"
+    },
+    {
+        "nome": "Pulp Fiction: Tempo de Violência",
+        "ano": 1994,
+        "sinopse": "As vidas de dois assassinos da máfia, um boxeador, a esposa de um gângster e um casal de bandidos se entrelaçam em quatro contos de violência e redenção.",
+        "poster": "https://live.staticflickr.com/65535/51084246006_9bdd95f0b6_b.jpg",
+        "trailer_link": "https://www.youtube.com/watch?v=s7EdQ4FqbhY"
+    },
+    {
+        "nome": "Jackie Brown",
+        "ano": 1997,
+        "sinopse": "Uma comissária de bordo é pega contrabandeando dinheiro para um traficante de armas. Pressionada pela polícia, ela elabora um plano arriscado para enganar a todos e ficar com o dinheiro.",
+        "poster": "https://upload.wikimedia.org/wikipedia/sr/9/92/Jackie_Brown_poster.jpg",
+        "trailer_link": "https://www.youtube.com/watch?v=G7HkBDNZV7s"
+    },
+    {
+        "nome": "Kill Bill: Volume 1",
+        "ano": 2003,
+        "sinopse": "A Noiva acorda de um coma de quatro anos. A ex-assassina busca vingança contra a equipe de assassinos que a traiu, começando sua jornada sangrenta.",
+        "poster": "https://upload.wikimedia.org/wikipedia/pt/6/6d/Kill_Bill_poster.jpg",
+        "trailer_link": "https://www.youtube.com/watch?v=7kSuas6mRpk"
+    },
+    {
+        "nome": "Kill Bill: Volume 2",
+        "ano": 2004,
+        "sinopse": "A Noiva continua sua busca por vingança contra seus ex-colegas, guardando seu último confronto para o líder do esquadrão, Bill.",
+        "poster": "https://live.staticflickr.com/7335/9586150410_16b501134d_b.jpg",
+        "trailer_link": "https://www.youtube.com/watch?v=NSR7x1N2d_c"
+    },
+    {
+        "nome": "À Prova de Morte",
+        "ano": 2007,
+        "sinopse": "Um dublê psicopata persegue e aterroriza jovens mulheres com seu carro 'à prova de morte', mas ele pode ter encontrado um desafio à altura.",
+        "poster": "https://upload.wikimedia.org/wikipedia/tr/f/f0/Death_Proof_%C3%96l%C3%BCm_Ge%C3%A7irmez_Afi%C5%9F_TR.jpg",
+        "trailer_link": "https://www.youtube.com/watch?v=664-b_EC4YQ"
+    },
+    {
+        "nome": "Bastardos Inglórios",
+        "ano": 2009,
+        "sinopse": "Na França ocupada pelos nazistas durante a Segunda Guerra Mundial, um plano de um grupo de soldados judeus americanos coincide com os planos de vingança da dona de um cinema.",
+        "poster": "https://live.staticflickr.com/5486/9186061699_85d99acebf_b.jpg",
+        "trailer_link": "https://www.youtube.com/watch?v=KnrRy6kSFF0"
+    },
+    {
+        "nome": "Django Livre",
+        "ano": 2012,
+        "sinopse": "Com a ajuda de um caçador de recompensas alemão, um escravo liberto parte para resgatar sua esposa de um brutal fazendeiro do Mississippi.",
+        "poster": "https://live.staticflickr.com/5513/10984328564_b0a5601244_b.jpg",
+        "trailer_link": "https://www.youtube.com/watch?v=0fUCuvNlOCg"
+    },
+    {
+        "nome": "Os Oito Odiados",
+        "ano": 2015,
+        "sinopse": "Na era pós-Guerra Civil, caçadores de recompensas tentam encontrar abrigo durante uma nevasca, mas acabam envolvidos em uma trama de traição e engano.",
+        "poster": "https://upload.wikimedia.org/wikipedia/tr/8/82/The_Hateful_Eight_-_afi%C5%9F.jpg",
+        "trailer_link": "https://www.youtube.com/watch?v=gnRbXn4-Yis"
+    },
+    {
+        "nome": "Era uma Vez em... Hollywood",
+        "ano": 2019,
+        "sinopse": "Um ator de televisão e seu dublê buscam alcançar a fama e o sucesso na indústria cinematográfica durante os últimos anos da Era de Ouro de Hollywood em 1969.",
+        "poster": "https://wiki.tarantino.info/images/thumb/Miniposter2.jpg/300px-Miniposter2.jpg",
+        "trailer_link": "https://www.youtube.com/watch?v=ELeMaP8EPAA"
+    }
+]
