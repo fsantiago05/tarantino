@@ -28,8 +28,19 @@ function iniciarBusca() {
     renderizarCards(resultados);
 }
 
+function limparBusca() {
+    if (campoBusca) {
+        campoBusca.value = "";
+    }
+    renderizarCards(dados);
+}
+
 function renderizarCards(cardsParaRenderizar) {
     cardConteiner.innerHTML = ""; // Limpa os cards existentes antes de renderizar novos
+    if (cardsParaRenderizar.length === 0) {
+        cardConteiner.innerHTML = `<p class="no-results">Nenhum filme encontrado com esse termo.</p>`;
+        return;
+    }
     for (const dado of cardsParaRenderizar) {
         const link = document.createElement("a");
         link.href = dado.trailer_link;
@@ -52,3 +63,12 @@ function renderizarCards(cardsParaRenderizar) {
 
 // Carrega os dados assim que o script é executado.
 carregarDados();
+
+// Adiciona um listener para a tecla "Enter" no campo de busca
+if (campoBusca) {
+    campoBusca.addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+            iniciarBusca();
+        }
+    });
+}

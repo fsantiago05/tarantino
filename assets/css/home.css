@@ -11,11 +11,17 @@
     margin: 2rem auto;
     max-width: 900px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Alterna a ordem para a segunda seção (imagem à direita) */
 .home-content:nth-child(even) {
     flex-direction: row-reverse;
+}
+
+.home-content:hover {
+    transform: scale(1.02); /* Efeito de zoom sutil */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Sombra mais pronunciada */
 }
 
 .about-image {
@@ -25,6 +31,13 @@
     object-fit: cover;
     border-radius: 5px;
     border: 3px solid #333;
+}
+
+/* Estilo específico para a imagem quadrada na home */
+.home-content img[alt="writer-director-quentin-tarantino"] {
+    width: 250px; /* Largura fixa para a imagem */
+    height: 250px; /* Altura fixa para a imagem (quadrada) */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
 }
 
 .home-content h2 {
@@ -78,4 +91,39 @@
         flex-direction: column; /* Empilha os itens verticalmente */
         padding: 2rem;
     }
+}
+
+/* Estilos para a galeria de imagens animada (slideshow) */
+.awards-gallery {
+    position: relative;
+    flex: 0 0 300px; /* Base de 300px para a galeria */
+    width: 300px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.awards-gallery .about-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: slideShow 16s infinite; /* 4s por imagem (4 imagens) */
+}
+
+/* Atraso na animação para cada imagem criar o efeito de slideshow */
+.awards-gallery .about-image:nth-child(2) { animation-delay: 4s; }
+.awards-gallery .about-image:nth-child(3) { animation-delay: 8s; }
+.awards-gallery .about-image:nth-child(4) { animation-delay: 12s; }
+
+@keyframes slideShow {
+    0% { opacity: 0; }
+    12.5% { opacity: 1; } /* Fade in (2s) */
+    25% { opacity: 1; }   /* Fica visível (2s) */
+    37.5% { opacity: 0; } /* Fade out (2s) */
+    100% { opacity: 0; }
 }

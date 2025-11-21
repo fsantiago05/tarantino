@@ -46,6 +46,12 @@ img {
     margin: 0 auto;
     padding: 2rem 0;
 }
+/* Animação de fade-in para o conteúdo principal */
+main.container {
+    animation: fadeIn 1s ease-in-out;
+}
+
+
 
 /* Cabeçalho principal */
 .main-header {
@@ -116,6 +122,12 @@ img {
     display: grid;
     grid-template-columns: repeat(auto-fit, 300px); /* Largura fixa para os cards */
     gap: 2rem;
+}
+
+/* Mensagem de "Nenhum resultado" */
+.no-results {
+    font-size: 1.2rem;
+    color: var(--primary-yellow);
 }
 
 /* Estilo dos cards de filme */
@@ -229,6 +241,16 @@ img {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+.clear-button {
+    background-color: #555; /* Cor diferente para o botão de limpar */
+    color: var(--light-text);
+}
+
 .search-button:hover {
     background-color: #d4a600; /* Amarelo mais escuro no hover */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
