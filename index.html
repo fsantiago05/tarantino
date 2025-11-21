@@ -3,27 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universo Tarantino</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Home - Universo Tarantino</title>
+    <link rel="stylesheet" href="assets/css/style.css"> <!-- Estilo principal -->
+    <link rel="stylesheet" href="assets/css/home.css"> <!-- Estilo da Home -->
+    <style>
+        .awards-gallery {
+            position: relative;
+            width: 100%;
+            max-width: 400px; /* Ajuste a largura máxima conforme necessário */
+            height: 250px; /* Ajuste a altura conforme necessário */
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            margin-right: 20px; /* Espaço entre a galeria e o texto */
+        }
+
+        .awards-gallery .about-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            animation: slideShow 16s infinite; /* 4s por imagem (4 imagens) */
+        }
+
+        .awards-gallery .about-image:nth-child(2) { animation-delay: 4s; }
+        .awards-gallery .about-image:nth-child(3) { animation-delay: 8s; }
+        .awards-gallery .about-image:nth-child(4) { animation-delay: 12s; }
+
+        @keyframes slideShow {
+            0% { opacity: 0; }
+            12.5% { opacity: 1; } /* Fade in */
+            25% { opacity: 1; } /* Fica visível */
+            37.5% { opacity: 0; } /* Fade out */
+            100% { opacity: 0; }
+        }
+    </style>
 </head>
 <body>
 
     <header class="main-header">
-        <h1>Universo Tarantino</h1>
-        <input type="text" id="campo-busca" placeholder="Buscar filmes..." class="search-bar">
-        <button class="search-button" onclick="iniciarBusca()">Buscar</button>
+        <h1><a href="index.html" class="card-link">Universo Tarantino</a></h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="movies.html">Filmes</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main class="container">
-        <div class="card-container">
-            <!-- Os cards dos filmes serão inseridos aqui pelo script.js -->
+        <section class="home-content">
+            <img src="https://m.media-amazon.com/images/I/51pyKyz3SaL._AC_UY1000_.jpg" alt="writer-director-quentin-tarantino" class="about-image">
+            <div class="home-content__text">
+                <h2>Bem-vindo ao Universo Tarantino</h2>
+                <p>Este site é uma homenagem à filmografia de Quentin Tarantino, apresentando uma lista interativa de seus filmes icônicos. Navegue pela seção de filmes para explorar detalhes sobre cada obra, incluindo títulos, anos de lançamento, sinopses e pôsteres. Aproveite a busca interativa para encontrar seus filmes favoritos rapidamente!</p>
+            </div>
+        </section>
+
+        <section class="home-content">
+            <img src="https://cdn01.justjared.com/wp-content/uploads/headlines/2025/08/quentin-tarantino-movie-critic-last-film.jpg" alt="tarantino-director" class="about-image">
+            <div class="home-content__text">
+                <h2>Quem é Quentin Tarantino?</h2>
+                <p>
+                    Quentin Tarantino é um renomado diretor, roteirista e produtor de cinema americano, conhecido por seu estilo único que combina violência estilizada, diálogos afiados e narrativas não lineares. Entre seus filmes mais famosos estão "Pulp Fiction", "Kill Bill", "Inglourious Basterds" e "Django Unchained". Sua contribuição para o cinema contemporâneo é amplamente reconhecida, tornando-o uma figura icônica na indústria cinematográfica.
+                </p>
+            </div>
+        </section>
+
+        <section class="home-content">
+            <div class="awards-gallery">
+                <img src="https://www.slantmagazine.com/wp-content/uploads/2010/02/awards_originalscreenplaywin_10.jpg" alt="Inglourious Basterds Awards" class="about-image">
+                <img src="https://mscwordpresscontent.s3.amazonaws.com/wa/wp-content/uploads/2020/07/Django-Unchained-1-1024x504.jpg" alt="Django-Unchained-1-1024x504" class="about-image">
+                <img src="https://wallpapers.com/images/hd/caption-hateful-eight-cold-wilderness-scene-ln22nr5vl29d8rk4.jpg" alt="hateful-eight" class="about-image">
+                <img src="https://wallpapers.com/images/hd/classic-american-film-pulp-fiction-ze6rp5evgce2x0u0.jpg" alt="pulp-fiction" class="about-image">
+            </div>
+            <div class="home-content__text">
+                 <h2>Premiações</h2>
+                 <ul>
+                     <li>
+                         <strong>Oscar (Melhor Roteiro Original):</strong>
+                         <ul>
+                             <li>1995: <em>Pulp Fiction: Tempo de Violência</em></li>
+                             <li>2013: <em>Django Livre</em></li>
+                         </ul>
+                     </li>
+                     <li>
+                         <strong>Festival de Cannes (Palma de Ouro):</strong>
+                         <ul>
+                             <li>1994: <em>Pulp Fiction: Tempo de Violência</em></li>
+                         </ul>
+                     </li>
+                     <li>
+                         <strong>Globo de Ouro (Melhor Roteiro):</strong>
+                         <ul>
+                             <li>1995: <em>Pulp Fiction: Tempo de Violência</em></li>
+                             <li>2013: <em>Django Livre</em></li>
+                             <li>2020: <em>Era Uma Vez em... Hollywood</em></li>
+                         </ul>
+                     </li>
+                     <li>
+                         <strong>BAFTA (Melhor Roteiro Original):</strong>
+                         <ul>
+                             <li>1995: <em>Pulp Fiction: Tempo de Violência</em></li>
+                             <li>2013: <em>Django Livre</em></li>
+                         </ul>
+                     </li>
+                     <li>
+                         <strong>César (Prêmio Honorário):</strong>
+                         <ul>
+                             <li>2011: (Conjunto da Obra)</li>
+                         </ul>
+                     </li>
+                 </ul>
+            </div>
+        </section>
+
+        <div class="cta-container">
+            <a href="movies.html" class="cta-button">Ver a Filmografia</a>
         </div>
     </main>
 
     <footer class="main-footer">
         <p>&copy; 2024 - Uma homenagem aos filmes de Quentin Tarantino.</p>
+        <a href="https://www.linkedin.com/in/fabr%C3%ADcio-santiago-90729a370/">LinkedIn</a>
+        <a href="https://github.com/fsantiago05/tarantino">GitHub</a>
     </footer>
-    <script src="script.js"></script>
-
+    
 </body>
 </html>

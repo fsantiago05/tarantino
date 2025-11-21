@@ -1,0 +1,41 @@
+/* Estilos específicos para a página "Sobre" */
+
+.about-content {
+    background-color: var(--dark-gray);
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 2rem 3rem;
+    margin: 0 auto;
+    max-width: 900px; /* Limita a largura para melhor legibilidade */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.about-content h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    color: var(--primary-yellow);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about-content h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    color: var(--primary-red);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #444;
+    padding-bottom: 0.5rem;
+}
+
+.about-content p,
+.about-content li {
+    font-size: 1.1rem;
+    color: var(--light-text);
+}
+
+.about-content ul {
+    list-style-position: inside;
+    padding-left: 1rem;
+}

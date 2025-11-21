@@ -49,10 +49,13 @@ img {
 
 /* Cabeçalho principal */
 .main-header {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 2rem 0;
     border-bottom: 4px solid var(--primary-red);
     margin-bottom: 2rem;
+    gap: 1.5rem; /* Espaçamento entre os itens do cabeçalho */
 }
 
 .main-header h1 {
@@ -63,10 +66,55 @@ img {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
+/* Estilos da Navegação */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.main-nav a {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+}
+
+/* Container da busca */
+.search-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Seção "Sobre" */
+.sobre {
+    background-color: var(--dark-gray);
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 2rem;
+    margin-bottom: 3rem; /* Espaço entre a seção sobre e os cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sobre h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    color: var(--primary-yellow);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.sobre p {
+    max-width: 80ch; /* Melhora a legibilidade limitando a largura da linha */
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Grid para a galeria de filmes */
 .card-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, 300px); /* Largura fixa para os cards */
     gap: 2rem;
 }
 
@@ -180,4 +228,7 @@ img {
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+.search-button:hover {
+    background-color: #d4a600; /* Amarelo mais escuro no hover */
 }
